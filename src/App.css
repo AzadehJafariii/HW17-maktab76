@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  height: 230px;
+}
+.topColor {
+  background-color: rgb(255, 229, 101);
+  height: 60px;
+}
+form {
+  background-color: rgb(89, 89, 89);
+  color: lightgrey;
+  font-size: 14px;
+}
+.firstCol {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 15px;
+}
+.secondCol {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 15px;
+}
+.thirdCol {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-left: 4%;
+  padding-top: 15px;
+}
+input {
+  width: 226px;
+  height: 45%;
+  text-align: right;
+  border: 1px solid rgb(136, 136, 136);
+  background-color: rgb(89, 89, 89);
+  border-radius: 4px;
+  padding: 10px 0 10px 0;
+}
+select {
+  width: 230px;
+  height: 50%;
+  text-align: right;
+  border: 1px solid rgb(136, 136, 136);
+  background-color: rgb(89, 89, 89);
+  color: rgb(159, 158, 158);
+  border-radius: 4px;
+  padding: 10px 0 10px 0;
+}
+::placeholder {
+  color: rgb(159, 158, 158);
+}
+textarea {
+  width: 350px;
+  margin-right: 80px;
+  text-align: right;
+  border: 1px solid rgb(136, 136, 136);
+  background-color: rgb(89, 89, 89);
+  border-radius: 4px;
+}
+.desLabel {
+  margin-right: 80px;
+}
+.formBtn {
+  display: flex;
+  justify-content: left;
+  margin-top: 5%;
+  gap: 5%;
+}
+.cancel {
+  padding: 4px 22px;
+  color: lightgrey;
+  border: 1px solid lightgrey;
+  background-color: rgb(89, 89, 89);
+  border-radius: 4px;
+}
+.save {
+  padding: 8px 28px;
+  background-color: rgb(246, 196, 14);
+  border: none;
+  border-radius: 4px;
+  color: rgb(89, 89, 89);
+}
+.labelSign {
+  margin-bottom: 2%;
+}
+table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title {
+  text-align: right;
+  padding-top: 2%;
+  color: lightgrey;
+  font-size: 20px;
+  margin: 0% 9% 2% 10%;
+  background-color: rgb(135, 133, 133);
+}
+.bottom {
+  background-color: rgb(135, 133, 133);
+  height: 70vh;
+}
+.bottomContainer {
+  height: 300px;
+  color: lightgrey;
+}
+.firstRow {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 120px;
+  margin-right: 9%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+.secondRow {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 9%;
+  gap: 74px;
+}
+td {
+  margin: 10px 10px;
+}
+table {
+  counter-reset: rowNumber;
+}
+td:first-child::before {
+  counter-increment: rowNumber;
+  content: counter(rowNumber);
+  padding-right: 0.3em;
+}
+.explain {
+  margin: 1% 16% 1% 0;
+  padding: 4px 8px;
+  border: 1px solid rgba(0, 0, 255, 0.566);
+  background-color: rgb(135, 133, 133);
+  color: rgb(183, 181, 181);
+  border-radius: 4px;
+  font-size: 15px;
+}
+.omitBtn {
+  margin: 1% 2% 1% 0;
+  padding: 4px 18px;
+  border: 1px solid rgba(255, 0, 0, 0.453);
+  background-color: rgb(135, 133, 133);
+  color: rgb(183, 181, 181);
+  border-radius: 4px;
+  font-size: 15px;
+}
+.editBtn {
+  padding: 2px 11px;
+  border: 1px solid rgba(255, 255, 0, 0.467);
+  background-color: rgb(135, 133, 133);
+  color: rgb(183, 181, 181);
+  border-radius: 4px;
+  font-size: 15px;
+}
